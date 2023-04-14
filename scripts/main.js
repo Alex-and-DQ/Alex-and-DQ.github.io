@@ -31,3 +31,9 @@ if(!localStorage.getItem('name')) {
 myButton.onclick = function() {
     setUserName();
 }
+
+const p = document.querySelector('p.slogan');
+p.addEventListener('click', update);
+function update(){
+    p.textContent = prompt('输入想要显示的内容：');
+}
